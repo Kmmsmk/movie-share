@@ -3,109 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>影视分享引流页</title>
+  <title>影视推荐 | 精选热片合集</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       margin: 0;
-      background-color: #f0f2f5;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f9f9f9;
       color: #333;
     }
     header {
-      background-color: #1e1e1e;
+      background: #111;
       color: #fff;
-      padding: 2em 1em;
       text-align: center;
+      padding: 2em 1em;
     }
     header h1 {
       margin: 0 0 0.5em;
       font-size: 2em;
     }
-    header p {
-      margin: 0;
-      font-size: 1.1em;
-    }
     .container {
-      max-width: 800px;
+      max-width: 1200px;
       margin: 2em auto;
       padding: 0 1em;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5em;
     }
     .movie-card {
       background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
-      margin-bottom: 2em;
-      overflow: hidden;
-    }
-    .movie-card img {
-      width: 100%;
-      display: block;
-    }
-    .movie-card .content {
       padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .movie-card h2 {
       margin-top: 0;
-      font-size: 1.5em;
+      font-size: 1.3em;
+      color: #222;
     }
     .movie-card p {
-      margin: 0.5em 0 1em;
-      color: #666;
+      flex-grow: 1;
+      font-size: 0.95em;
+      color: #555;
     }
-    .movie-card a.btn {
+    .movie-card a {
       display: inline-block;
-      background-color: #ff4b2b;
-      color: white;
-      padding: 0.6em 1.2em;
-      border-radius: 5px;
+      margin-top: 1em;
+      background: #ff4b2b;
+      color: #fff;
+      padding: 0.5em 1em;
+      border-radius: 4px;
       text-decoration: none;
       font-weight: bold;
+      text-align: center;
     }
     footer {
       text-align: center;
       padding: 2em 1em;
-      color: #999;
+      color: #888;
       font-size: 0.9em;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>🎬 影视精选推荐</h1>
-    <p>每日更新 · 热门大片 · 高清资源 · 实时跳转</p>
+    <h1>🎬 热门影视推荐</h1>
+    <p>每日更新 · 精选片单 · 自由扩展</p>
   </header>
 
   <div class="container">
     <div class="movie-card">
-      <img src="https://i.postimg.cc/wBmdVgdF/94c-S0mz-ODEo-NIXFT7nh-Pc-I8-V4-IJ.webp" alt="流浪地球2">
-      <div class="content">
-        <h2>流浪地球2</h2>
-        <p>太阳即将毁灭，人类启动星际计划。硬核科幻巨制，再掀热潮。</p>
-        <a class="btn" href="https://t.me/yourchannel" target="_blank">📥 加入获取资源</a>
-      </div>
+      <h2>流浪地球 2</h2>
+      <p>太阳即将毁灭，人类开启星际流浪计划。宏大战争，震撼视效。</p>
+      <a href="https://t.me/yourchannel" target="_blank">获取资源</a>
     </div>
 
     <div class="movie-card">
-      <img src="https://via.placeholder.com/800x400?text=孤注一掷" alt="孤注一掷">
-      <div class="content">
-        <h2>孤注一掷</h2>
-        <p>揭秘缅北诈骗黑幕，反诈宣传大片，看完直呼真实。</p>
-        <a class="btn" href="https://t.me/yourchannel" target="_blank">🎬 获取高清版本</a>
-      </div>
+      <h2>孤注一掷</h2>
+      <p>揭露网络诈骗真相，缅北题材火爆登场，反诈必看力作。</p>
+      <a href="https://t.me/yourchannel" target="_blank">立即观看</a>
     </div>
 
     <div class="movie-card">
-      <img src="https://via.placeholder.com/800x400?text=热辣滚烫" alt="热辣滚烫">
-      <div class="content">
-        <h2>热辣滚烫</h2>
-        <p>贾玲减重100斤主演，燃爆全场，笑中带泪的逆袭故事。</p>
-        <a class="btn" href="https://t.me/yourchannel" target="_blank">🔥 马上观看</a>
-      </div>
+      <h2>热辣滚烫</h2>
+      <p>贾玲热血归来，励志拳击人生，燃爆全场。</p>
+      <a href="https://t.me/yourchannel" target="_blank">点击查看</a>
+    </div>
+
+    <!-- 新电影卡片可直接复制以下结构添加 -->
+    <div class="movie-card">
+      <h2>你的电影名</h2>
+      <p>这里填写电影简介，可以尽量简短精炼，支持无限添加。</p>
+      <a href="https://t.me/yourchannel" target="_blank">获取资源</a>
     </div>
   </div>
 
   <footer>
-    本站不存储任何视频，仅作信息导航展示。资源来自网络，仅供参考。
+    本页仅作展示与分享导航，不含资源存储。内容来源于公开网络。
   </footer>
 </body>
 </html>
