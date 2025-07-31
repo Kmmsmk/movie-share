@@ -1,76 +1,65 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>影视推荐 | 精选热片合集</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>电影导航分享页</title>
   <style>
     body {
+      font-family: "Helvetica Neue", sans-serif;
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: #f9f9f9;
+      background-color: #f9f9f9;
       color: #333;
     }
     header {
       background: #111;
       color: #fff;
+      padding: 20px;
       text-align: center;
-      padding: 2em 1em;
+      font-size: 24px;
     }
-    header h1 {
-      margin: 0 0 0.5em;
-      font-size: 2em;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 2em auto;
-      padding: 0 1em;
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 20px;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.5em;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
     }
     .movie-card {
       background: #fff;
-      padding: 1em;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 16px;
+      transition: box-shadow 0.2s;
     }
-    .movie-card h2 {
-      margin-top: 0;
-      font-size: 1.3em;
-      color: #222;
+    .movie-card:hover {
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
     }
-    .movie-card p {
-      flex-grow: 1;
-      font-size: 0.95em;
+    .movie-title {
+      font-size: 18px;
+      margin: 0 0 10px;
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .movie-title:hover {
+      text-decoration: underline;
+    }
+    .movie-desc {
+      font-size: 14px;
       color: #555;
     }
-    .movie-card a {
-      display: inline-block;
-      margin-top: 1em;
-      background: #ff4b2b;
-      color: #fff;
-      padding: 0.5em 1em;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-    }
     footer {
+      margin-top: 40px;
+      padding: 20px;
       text-align: center;
-      padding: 2em 1em;
-      color: #888;
-      font-size: 0.9em;
-    }
-    .footer-links {
-      margin-top: 1em;
+      font-size: 13px;
+      color: #666;
+      border-top: 1px solid #ddd;
     }
     .footer-links a {
-      color: #888;
-      margin: 0 0.5em;
+      margin: 0 10px;
+      color: #0077cc;
       text-decoration: none;
     }
     .footer-links a:hover {
@@ -79,51 +68,41 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>🎬 热门影视推荐</h1>
-    <p>每日更新 · 精选片单 · 自由扩展</p>
-  </header>
 
-  <div class="container">
-    <div class="movie-card">
-      <h2>流浪地球 2</h2>
-      <p>太阳即将毁灭，人类开启星际流浪计划。宏大战争，震撼视效。</p>
-      <a href="https://t.me/yourchannel" target="_blank">更多详情</a>
-    </div>
+<header>
+  🎬 精品影视导航分享
+</header>
 
-    <div class="movie-card">
-      <h2>孤注一掷</h2>
-      <p>揭露网络诈骗真相，缅北题材火爆登场，反诈必看力作。</p>
-      <a href="https://t.me/yourchannel" target="_blank">更多详情</a>
-    </div>
-
-    <div class="movie-card">
-      <h2>热辣滚烫</h2>
-      <p>贾玲热血归来，励志拳击人生，燃爆全场。</p>
-      <a href="https://t.me/yourchannel" target="_blank">更多详情</a>
-    </div>
-
-    <div class="movie-card">
-      <h2>热辣滚烫</h2>
-      <p>贾玲热血归来，励志拳击人生，燃爆全场。</p>
-      <a href="https://t.me/yourchannel" target="_blank">更多详情</a>
-    </div>
-    
-    <!-- 新电影卡片可直接复制以下结构添加 -->
-    <div class="movie-card">
-      <h2>你的电影名</h2>
-      <p>这里填写电影简介，可以尽量简短精炼，支持无限添加。</p>
-      <a href="https://t.me/yourchannel" target="_blank">更多详情</a>
-    </div>
+<main>
+  <!-- 电影条目模板 -->
+  <div class="movie-card">
+    <a href="https://t.me/your_channel_1" class="movie-title" target="_blank">《封神第一部：朝歌风云》</a>
+    <p class="movie-desc">奇幻史诗巨制，少年姬发觉醒天命，与武王联手讨伐商纣王。</p>
   </div>
 
-  <footer>
-    <div>本页仅作展示与分享导航，不含资源存储。内容来源于公开网络。</div>
-    <div class="footer-links">
-      <a href="https://t.me/yourchannel" target="_blank">📢 Telegram 频道</a>
-      <a href="https://yourwebsite.com" target="_blank">🌐 友情链接</a>
-      <a href="mailto:youremail@example.com">📮 联系我们</a>
-    </div>
-  </footer>
+  <div class="movie-card">
+    <a href="https://t.me/your_channel_2" class="movie-title" target="_blank">《消失的她》</a>
+    <p class="movie-desc">悬疑爱情大片，丈夫寻找失踪妻子的过程中揭开惊人真相。</p>
+  </div>
+
+  <div class="movie-card">
+    <a href="https://t.me/your_bot_or_link" class="movie-title" target="_blank">《满江红》</a>
+    <p class="movie-desc">张艺谋执导古装悬疑，风云变幻下的忠义与阴谋。</p>
+  </div>
+
+  <!-- 继续添加更多电影条目 -->
+
+</main>
+
+<footer>
+  本页仅作展示与分享导航，不含资源存储，内容来源于公开网络。<br>
+  <div class="footer-links">
+    📌 <a href="https://t.me/yourchannel" target="_blank">Telegram频道</a> |
+    🤖 <a href="https://t.me/yourbot" target="_blank">资源机器人</a> |
+    🔗 <a href="https://yourfriendlink.com" target="_blank">友情链接1</a> |
+    🔗 <a href="https://anotherlink.com" target="_blank">友情链接2</a>
+  </div>
+</footer>
+
 </body>
 </html>
