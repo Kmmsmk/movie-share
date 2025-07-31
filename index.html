@@ -1,67 +1,93 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>电影导航分享页</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>影视分享导航</title>
   <style>
     body {
-      font-family: "Helvetica Neue", sans-serif;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f8f9fa;
       margin: 0;
-      background-color: #f9f9f9;
+      padding: 0;
       color: #333;
     }
+
     header {
-      background: #111;
-      color: #fff;
-      padding: 20px;
+      background-color: #212529;
+      color: white;
+      padding: 20px 0;
       text-align: center;
-      font-size: 24px;
     }
-    main {
-      max-width: 960px;
-      margin: auto;
-      padding: 20px;
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1em;
+      color: #ced4da;
+    }
+
+    .container {
+      padding: 30px 5%;
+    }
+
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
     }
-    .movie-card {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 16px;
-      transition: box-shadow 0.2s;
+
+    .movie {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+      border-left: 4px solid #007bff;
     }
-    .movie-card:hover {
-      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+
+    .movie:hover {
+      transform: scale(1.02);
     }
-    .movie-title {
-      font-size: 18px;
-      margin: 0 0 10px;
-      color: #0077cc;
+
+    .movie a {
       text-decoration: none;
+      color: #007bff;
     }
-    .movie-title:hover {
-      text-decoration: underline;
+
+    .movie h3 {
+      margin: 0 0 8px;
+      font-size: 1.1em;
     }
-    .movie-desc {
-      font-size: 14px;
+
+    .movie p {
+      margin: 0;
+      font-size: 0.95em;
       color: #555;
     }
+
     footer {
-      margin-top: 40px;
-      padding: 20px;
+      background-color: #f1f1f1;
+      padding: 20px 5%;
+      font-size: 0.9em;
+      color: #777;
       text-align: center;
-      font-size: 13px;
-      color: #666;
-      border-top: 1px solid #ddd;
     }
+
+    .footer-links {
+      margin-top: 10px;
+    }
+
     .footer-links a {
       margin: 0 10px;
-      color: #0077cc;
+      color: #007bff;
       text-decoration: none;
     }
+
     .footer-links a:hover {
       text-decoration: underline;
     }
@@ -70,51 +96,65 @@
 <body>
 
 <header>
-  🎬 2025精品影视导航分享
+  <h1>影视分享导航</h1>
+  <p>定期更新热门电影推荐，点击跳转第三方平台</p>
 </header>
 
-<main>
-  <!-- 电影条目模板 -->
-  <div class="movie-card">
-    <a href="https://t.me/your_channel_1" class="movie-title" target="_blank">《封神第一部：朝歌风云》</a>
-    <p class="movie-desc">奇幻史诗巨制，少年姬发觉醒天命，与武王联手讨伐商纣王。</p>
-  </div>
-  
-  <div class="movie-card">
-    <a href="https://t.me/your_channel_1" class="movie-title" target="_blank">《封神第一部：朝歌风云》</a>
-    <p class="movie-desc">奇幻史诗巨制，少年姬发觉醒天命，与武王联手讨伐商纣王。</p>
-  </div>
-  
-  <div class="movie-card">
-    <a href="https://t.me/your_channel_1" class="movie-title" target="_blank">《封神第一部：朝歌风云》</a>
-    <p class="movie-desc">奇幻史诗巨制，少年姬发觉醒天命，与武王联手讨伐商纣王。</p>
-  </div>
-  
-  <div class="movie-card">
-    <a href="https://t.me/your_channel_1" class="movie-title" target="_blank">《封神第一部：朝歌风云》</a>
-    <p class="movie-desc">奇幻史诗巨制，少年姬发觉醒天命，与武王联手讨伐商纣王。</p>
-  </div>
-  
-  <div class="movie-card">
-    <a href="https://t.me/your_channel_1" class="movie-title" target="_blank">《封神第一部：朝歌风云》</a>
-    <p class="movie-desc">奇幻史诗巨制，少年姬发觉醒天命，与武王联手讨伐商纣王。</p>
-  </div>
+<div class="container">
+  <div class="grid">
+    <div class="movie">
+      <a href="https://example.com/movie1" target="_blank">
+        <h3>流浪地球2</h3>
+      </a>
+      <p>人类为拯救地球，展开史诗级逃亡与牺牲。</p>
+    </div>
+    <div class="movie">
+      <a href="https://example.com/movie2" target="_blank">
+        <h3>沙丘：第二部</h3>
+      </a>
+      <p>继承遗志，对抗帝国，宿命之战拉开序幕。</p>
+    </div>
+    <div class="movie">
+      <a href="https://example.com/movie3" target="_blank">
+        <h3>奥本海默</h3>
+      </a>
+      <p>原子弹之父的挣扎与信仰，诺兰史诗传记巨作。</p>
+    </div>
+    <div class="movie">
+      <a href="https://example.com/movie4" target="_blank">
+        <h3>瞬息全宇宙</h3>
+      </a>
+      <p>一场关于亲情、多元宇宙与人生意义的奇妙旅行。</p>
+    </div>
 
-  <div class="movie-card">
-    <a href="https://t.me/your_channel_2" class="movie-title" target="_blank">《消失的她》</a>
-    <p class="movie-desc">悬疑爱情大片，丈夫寻找失踪妻子的过程中揭开惊人真相。</p>
+    <!-- 可无限复制以下结构添加更多 -->
+    <div class="movie">
+      <a href="https://example.com/movie5" target="_blank">
+        <h3>你的名字。</h3>
+      </a>
+      <p>奇幻爱情的交错时空，泪点满满的青春故事。</p>
+    </div>
+    <div class="movie">
+      <a href="https://example.com/movie6" target="_blank">
+        <h3>星际穿越</h3>
+      </a>
+      <p>跨越时空的父女情深与人类存亡之旅。</p>
+    </div>
+    <div class="movie">
+      <a href="https://example.com/movie7" target="_blank">
+        <h3>霸王别姬</h3>
+      </a>
+      <p>爱与时代洪流交织，永恒经典之作。</p>
+    </div>
+    <div class="movie">
+      <a href="https://example.com/movie8" target="_blank">
+        <h3>盗梦空间</h3>
+      </a>
+      <p>梦境与现实的界限，你能分清吗？</p>
+    </div>
   </div>
+</div>
 
-  <div class="movie-card">
-    <a href="https://t.me/your_bot_or_link" class="movie-title" target="_blank">《满江红》</a>
-    <p class="movie-desc">张艺谋执导古装悬疑，风云变幻下的忠义与阴谋。</p>
-  </div>
-
-  <!-- 继续添加更多电影条目 -->
-
-</main>
-
-<a href="share_2501.html" target="_blank">《更多分享》</a>
   
 <footer>
   本页仅作展示与分享导航，不含资源存储，内容来源于公开网络。<br>
@@ -128,3 +168,5 @@
 
 </body>
 </html>
+
+<a href="share_2501.html" target="_blank">《更多分享》</a>
