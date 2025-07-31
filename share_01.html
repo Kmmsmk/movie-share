@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>影视分享导航</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #212529;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1em;
+      color: #ced4da;
+    }
+
+    .container {
+      padding: 30px 5%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .movie {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+      border-left: 4px solid #007bff;
+    }
+
+    .movie:hover {
+      transform: scale(1.02);
+    }
+
+    .movie a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .movie h3 {
+      margin: 0 0 8px;
+      font-size: 1.1em;
+    }
+
+    .movie p {
+      margin: 0;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      padding: 20px 5%;
+      font-size: 0.9em;
+      color: #777;
+      text-align: center;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+    }
+
+    .footer-links a {
+      margin: 0 10px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>影视分享导航</h1>
+  <p>定期更新热门电影推荐，点击跳转第三方平台</p>
+</header>
+
+<div class="container">
+  <div class="grid">
+    <div class="movie">
+      <a href="https://example.com/movie1" target="_blank">
+        <h3>流浪地球2</h3>
+      </a>
+      <p>人类为拯救地球，展开史诗级逃亡与牺牲。</p>
+    </div>
+    <div class="movie">
+      <a href="https://example.com/movie2" target="_blank">
+        <h3>沙丘：第二部</h3>
+      </a>
+      <p>继承遗志，对抗帝国，宿命之战拉开序幕。</p>
+    </div>
+    <div class="movie">
+      <a href="https://example.com/movie3" target="_blank">
+        <h3>奥本海默</h3>
+      </a>
+      <p>原子弹之父的挣扎与信仰，诺兰史诗传记巨作。</p>
+    </div>
+    <div class="movie">
+      <a href="https://example.com/movie4" target="_blank">
+        <h3>瞬息全宇宙</h3>
+      </a>
+      <p>一场关于亲情、多元宇宙与人生意义的奇妙旅行。</p>
+    </div>
+
+    <!-- 可无限复制以下结构添加更多 -->
+    <div class="movie">
+      <a href="https://example.com/movie5" target="_blank">
+        <h3>你的名字。</h3>
+      </a>
+      <p>奇幻爱情的交错时空，泪点满满的青春故事。</p>
+    </div>
+    <div class="movie">
+      <a href="https://example.com/movie6" target="_blank">
+        <h3>星际穿越</h3>
+      </a>
+      <p>跨越时空的父女情深与人类存亡之旅。</p>
+    </div>
+    <div class="movie">
+      <a href="https://example.com/movie7" target="_blank">
+        <h3>霸王别姬</h3>
+      </a>
+      <p>爱与时代洪流交织，永恒经典之作。</p>
+    </div>
+    <div class="movie">
+      <a href="https://example.com/movie8" target="_blank">
+        <h3>盗梦空间</h3>
+      </a>
+      <p>梦境与现实的界限，你能分清吗？</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  本页仅作展示与分享导航，不含资源存储。内容来源于公开网络。
+  <div class="footer-links">
+    <a href="https://t.me/yourchannel" target="_blank">Telegram频道</a>
+    <a href="https://github.com/yourproject" target="_blank">GitHub项目</a>
+    <a href="https://yourfriendlink.com" target="_blank">友情链接</a>
+  </div>
+</footer>
+
+</body>
+</html>
